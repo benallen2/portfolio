@@ -1,0 +1,148 @@
+html, body {
+  height: 100%;
+  color: #1e4fac;
+  overflow-x: hidden;
+}
+
+.fa-bars {
+  border:1px solid white;
+  border-radius: 2px;
+  padding: 5px 7px 5px 7px;
+  margin: 250px 0px 0px 50px;
+  color: white;
+}
+
+#introText{
+  margin: 50px 20px 20px 0px;
+  font-family: 'Oleo Script', cursive;
+  font-size: 72px;
+  color: white;
+  text-align: center;
+}
+
+#name {
+  font-size: 144px;
+}
+
+a {
+  text-decoration: none;
+  color: #1e4fac;
+}
+a:visited{
+  color: #1e4fac;
+}
+
+.pagewrap {
+  transition: margin-left 0.3s ease;
+  width: 100%;
+  left: 0;
+  float: left;
+  overflow-x: hidden;
+}
+
+.mainContainer {
+  background: url("./gulls.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media screen and (max-height: 450px) {
+  .sectionTitle {font-size: 18px;}
+}
+
+#navMenuContainer {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.3s ease;
+  color: #1e4fac;
+  padding: 0;
+  text-align: center;
+}
+
+.sectionTitle:hover {
+  color: white;
+  background-color: #1e4fac;
+}
+
+.brand {
+  font-family: 'Oleo Script', cursive;
+  padding: 25px 8px 0px 8px;
+  margin-top: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.brand:hover {
+  text-decration: none;
+}
+
+.sectionTitle {
+  padding: 10px 8px 8px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+  width: 250px;
+  border-bottom: solid 1px #1e4fac;
+  border-bottom-left-radius: 15px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.sectionsContainer {
+  padding-top: 50%;
+}
+
+.fa-times {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.aboutContainer{
+  color: #1e4fac;
+  overflow-x: hidden;
+  border-bottom: solid 1px #1e4fac;
+  text-align: right;
+}
+
+.aboutText {
+  border-bottom: 1px solid #1e4fac;
+}
+
+.active {
+  color: white;
+  background-color: #1e4fac;
+}
+
+.projectBox {
+  height: auto;
+  border: 1px solid black;
+  width: auto;
+  background-color: white;
+  padding: 8px 8px 8px 8px;
+  margin-top: 20px;
+}
+
+.projectBox:hover {
+  color: white;
+  background-color: #1e4fac;
+}
+
+.projectBox > img {
+  height: 120px;
+  width: 180px;
+}
+
+.projectRow{
+  text-align: center;
+}
