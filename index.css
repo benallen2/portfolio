@@ -4,20 +4,28 @@ html, body {
   overflow-x: hidden;
 }
 
+
 .fa-bars {
   border:1px solid white;
   border-radius: 2px;
   padding: 5px 7px 5px 7px;
-  margin: 250px 0px 0px 50px;
+  margin: 15px 0px 0px 15px;
   color: white;
+  z-index: 1;
+  position: fixed;
 }
 
 #introText{
-  margin: 50px 20px 20px 0px;
+  margin: 150px 20px 0px 0px;
   font-family: 'Oleo Script', cursive;
   font-size: 72px;
   color: white;
   text-align: center;
+}
+.downArrow > img{
+  text-align: center;
+  margin-top: 40px;
+  max-height: 100px;
 }
 
 #name {
@@ -28,7 +36,11 @@ a {
   text-decoration: none;
   color: #1e4fac;
 }
-a:visited{
+a:visited {
+  color: #1e4fac;
+}
+a:hover {
+  text-decoration: none;
   color: #1e4fac;
 }
 
@@ -46,7 +58,10 @@ a:visited{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 100vh;
+  border-bottom: 1px solid #1e4fac;
 }
+
 
 @media screen and (max-height: 450px) {
   .sectionTitle {font-size: 18px;}
@@ -79,9 +94,6 @@ a:visited{
   text-align: center;
   cursor: pointer;
 }
-.brand:hover {
-  text-decration: none;
-}
 
 .sectionTitle {
   padding: 10px 8px 8px 15px;
@@ -111,12 +123,57 @@ a:visited{
 .aboutContainer{
   color: #1e4fac;
   overflow-x: hidden;
-  border-bottom: solid 1px #1e4fac;
   text-align: right;
+  height: 100vh;
+  border-bottom: solid 1px #1e4fac;
+  background: url("./sintra.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-left: 70px;
+}
+.aboutContent, .workContent {
+  background-color: white;
+  padding: 10px 40px 10px 40px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+.aboutTitle, .workTitle {
+  border-top: solid 1px #1e4fac;
+  border-left: solid 1px #1e4fac;
+  position: relative;
+}
+
+.aboutTitle:after {
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: -1px;
 }
 
 .aboutText {
-  border-bottom: 1px solid #1e4fac;
+  padding-right:15px;
+  padding-bottom: 5px;
+}
+
+.lastAbout {
+  border-bottom: solid 1px #1e4fac;
+  border-right: solid 1px #1e4fac;
+  position: relative;
+}
+
+.lastAbout:after {
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
 }
 
 .active {
@@ -124,25 +181,36 @@ a:visited{
   background-color: #1e4fac;
 }
 
-.projectBox {
-  height: auto;
-  border: 1px solid black;
-  width: auto;
-  background-color: white;
-  padding: 8px 8px 8px 8px;
-  margin-top: 20px;
-}
-
-.projectBox:hover {
+.workContainer {
   color: white;
+  overflow-x: hidden;
+  height: 100vh;
+  border-bottom: solid 1px #1e4fac;
   background-color: #1e4fac;
 }
 
-.projectBox > img {
-  height: 120px;
-  width: 180px;
+.workNav {
+  height: 10vh;
+  color: #1e4fac;
+  background-color: white;
+}
+.workMenuDock {
+  background-color: #1e4fac;
+  height: 10vh;
+}
+.worklist{
+  margin-top: 3vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+  padding-bottom: 15px;
+}
+h6 {
+  font-size: 16px;
+  text-align: center;
 }
 
-.projectRow{
-  text-align: center;
+.workBox {
+  background-color: white;
+
 }
