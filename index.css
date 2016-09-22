@@ -1,9 +1,7 @@
 html, body {
-  height: 100%;
   color: #1e4fac;
   overflow-x: hidden;
 }
-
 
 .fa-bars {
   border:1px solid white;
@@ -23,6 +21,14 @@ html, body {
   text-align: center;
 }
 .downArrow > img{
+  text-align: center;
+  margin-top: 40px;
+  max-height: 100px;
+}
+#downarrow, #downarrowAbout, #downarrowWork  {
+  cursor: pointer;
+}
+.downArrowAbout > img{
   text-align: center;
   margin-top: 40px;
   max-height: 100px;
@@ -133,13 +139,13 @@ a:hover {
   background-size: cover;
   padding-left: 70px;
 }
-.aboutContent, .workContent {
+.aboutContent {
   background-color: white;
   padding: 10px 40px 10px 40px;
   border-radius: 10px;
   margin-top: 50px;
 }
-.aboutTitle, .workTitle {
+.aboutTitle {
   border-top: solid 1px #1e4fac;
   border-left: solid 1px #1e4fac;
   position: relative;
@@ -203,14 +209,80 @@ a:hover {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   cursor: pointer;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
+  height: 100%;
 }
 h6 {
   font-size: 16px;
   text-align: center;
 }
 
-.workBox {
+.workContent {
   background-color: white;
+  padding: 10px 40px 10px 40px;
+  border-radius: 10px;
+  margin-top: 50px;
+  color: #1e4fac;
+}
+#workTitle {
+  border-top: solid 1px #1e4fac;
+  border-left: solid 1px #1e4fac;
+  position: relative;
+}
+#workTitle > h3 {
+  margin-top: 60px;
+  margin-left: 60px;
+  text-align: center;
+}
 
+#workTitle:after {
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: -1px;
+}
+
+#workInfo:after {
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+
+#workInfo {
+  border-bottom: solid 1px #1e4fac;
+  border-right: solid 1px #1e4fac;
+  position: relative;
+  margin-top: 50px;
+}
+#workImg {
+  text-align: right;
+  margin-top: 30px;
+}
+
+#workImg  img {
+  max-height: 200px;
+  min-height: 200px;
+  max-width: 300px;
+  border: 1px solid black;
+}
+
+#workImg > p {
+  text-align: center;
+  font-size: 12px;
+}
+
+#contact{
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.fa-facebook-official {
+  padding-right: 20px;
 }
