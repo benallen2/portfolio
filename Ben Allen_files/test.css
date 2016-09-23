@@ -1,0 +1,38 @@
+body {
+  color: #F0F4F1;
+  background-color: #105A8D;
+}
+.row {
+  text-align: center;
+}
+.workTitle {
+  display: block;
+  text-align: center;
+  background-color: white;
+  color: #1e4fac;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.workImg {
+  text-align: center;
+}
+
+img {
+  border: 1px solid black;
+  clear: left;
+  max-height: 400px;
+  max-width: 500px;
+}
+
+.active {
+  display: block;
+  background-color: #1C8DA8;
+  color: #B1F3E7;
+}
+
+.content {
+  background-color: #1C8DA8;
+  border-top-left-radius: 10px;
+}

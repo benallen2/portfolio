@@ -1,14 +1,15 @@
 html, body {
-  color: #1e4fac;
+  color: #F0F4F1;
+  background-color: #4D173A;
   overflow-x: hidden;
 }
 
 .fa-bars {
-  border:1px solid white;
+  border:1px solid #84D9AD;
   border-radius: 2px;
   padding: 5px 7px 5px 7px;
   margin: 15px 0px 0px 15px;
-  color: white;
+  color: #F0F4F1;
   z-index: 1;
   position: fixed;
 }
@@ -17,7 +18,7 @@ html, body {
   margin: 150px 20px 0px 0px;
   font-family: 'Oleo Script', cursive;
   font-size: 72px;
-  color: white;
+  color: #84D9AD;
   text-align: center;
 }
 .downArrow > img{
@@ -27,6 +28,7 @@ html, body {
 }
 #downarrow, #downarrowAbout, #downarrowWork  {
   cursor: pointer;
+  max-height: 70px;
 }
 .downArrowAbout > img{
   text-align: center;
@@ -40,14 +42,14 @@ html, body {
 
 a {
   text-decoration: none;
-  color: #1e4fac;
+  color: #15486A;
 }
 a:visited {
-  color: #1e4fac;
+  color: #15486A;
 }
 a:hover {
   text-decoration: none;
-  color: #1e4fac;
+  color: #15486A;
 }
 
 .pagewrap {
@@ -65,7 +67,7 @@ a:hover {
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  border-bottom: 1px solid #1e4fac;
+  border-bottom: 1px solid black;
 }
 
 
@@ -80,17 +82,17 @@ a:hover {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: white;
+  background-color: #F7FAE6;
   overflow-x: hidden;
   transition: 0.3s ease;
-  color: #1e4fac;
+  color: #4D173A;
   padding: 0;
   text-align: center;
 }
 
 .sectionTitle:hover {
-  color: white;
-  background-color: #1e4fac;
+  color: #F7FAE6;
+  background-color: #15486A;
 }
 
 .brand {
@@ -108,7 +110,7 @@ a:hover {
   display: block;
   transition: 0.3s;
   width: 250px;
-  border-bottom: solid 1px #1e4fac;
+  border-bottom: solid 1px #4D173A;
   border-bottom-left-radius: 15px;
   margin-bottom: 0px;
   margin-top: 0px;
@@ -127,11 +129,11 @@ a:hover {
 }
 
 .aboutContainer{
-  color: #1e4fac;
+  color: #15486A;
   overflow-x: hidden;
   text-align: right;
   height: 100vh;
-  border-bottom: solid 1px #1e4fac;
+  border-bottom: solid 1px black;
   background: url("./sintra.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -140,14 +142,14 @@ a:hover {
   padding-left: 70px;
 }
 .aboutContent {
-  background-color: white;
+  background-color: #F7FAE6;
   padding: 10px 40px 10px 40px;
   border-radius: 10px;
   margin-top: 50px;
 }
 .aboutTitle {
-  border-top: solid 1px #1e4fac;
-  border-left: solid 1px #1e4fac;
+  border-top: solid 1px #4D173A;
+  border-left: solid 1px #4D173A;
   position: relative;
 }
 
@@ -155,7 +157,7 @@ a:hover {
   content: "";
   width: 50%;
   height: 1px;
-  background-color: white;
+  background-color: #F7FAE6;
   position: absolute;
   right: 0;
   top: -1px;
@@ -167,8 +169,8 @@ a:hover {
 }
 
 .lastAbout {
-  border-bottom: solid 1px #1e4fac;
-  border-right: solid 1px #1e4fac;
+  border-bottom: solid 1px #4D173A;
+  border-right: solid 1px #4D173A;
   position: relative;
 }
 
@@ -176,106 +178,82 @@ a:hover {
   content: "";
   width: 50%;
   height: 1px;
-  background-color: white;
+  background-color: #F7FAE6;
   position: absolute;
   left: 0;
   bottom: -1px;
 }
 
 .active {
-  color: white;
-  background-color: #1e4fac;
+  color: #F7FAE6;
+  background-color: #15486A;
 }
 
-.workContainer {
-  color: white;
-  overflow-x: hidden;
-  height: 100vh;
-  border-bottom: solid 1px #1e4fac;
-  background-color: #1e4fac;
+.workTitle {
+  display: block;
+  text-align: center;
+  background-color: #F7FAE6;
+  color: #4D173A;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#workImg {
+  text-align: center;
+}
+
+#workImg > a > img {
+  border: 1px solid #4D173A;
+  max-height: 300px;
+  max-width: 500px;
 }
 
 .workNav {
-  height: 10vh;
-  color: #1e4fac;
-  background-color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 5%;
 }
-.workMenuDock {
-  background-color: #1e4fac;
-  height: 10vh;
-}
-.worklist{
-  margin-top: 3vh;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+.worklist > h5 {
+  font-size: 20px;
   cursor: pointer;
-  padding-bottom: 0px;
-  height: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-h6 {
-  font-size: 16px;
+
+.worklist{
+  border: 1px solid #84D9AD;
+  border-right: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.workActive {
+  display: block;
+  background-color: #15486A;
+  color: #F0F4F1;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.content {
+  background-color: #15486A;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 100vh;
   text-align: center;
-}
-
-.workContent {
-  background-color: white;
-  padding: 10px 40px 10px 40px;
-  border-radius: 10px;
-  margin-top: 50px;
-  color: #1e4fac;
-}
-#workTitle {
-  border-top: solid 1px #1e4fac;
-  border-left: solid 1px #1e4fac;
-  position: relative;
-}
-#workTitle > h3 {
-  margin-top: 60px;
-  margin-left: 60px;
-  text-align: center;
-}
-
-#workTitle:after {
-  content: "";
-  width: 50%;
-  height: 1px;
-  background-color: white;
-  position: absolute;
-  right: 0;
-  top: -1px;
-}
-
-#workInfo:after {
-  content: "";
-  width: 50%;
-  height: 1px;
-  background-color: white;
-  position: absolute;
-  left: 0;
-  bottom: -1px;
 }
 
 #workInfo {
-  border-bottom: solid 1px #1e4fac;
-  border-right: solid 1px #1e4fac;
-  position: relative;
-  margin-top: 50px;
-}
-#workImg {
-  text-align: right;
-  margin-top: 30px;
-}
-
-#workImg  img {
-  max-height: 200px;
-  min-height: 200px;
-  max-width: 300px;
-  border: 1px solid black;
-}
-
-#workImg > p {
-  text-align: center;
-  font-size: 12px;
+  margin-top: 10px;
+  background-color: #B1F3E7;
+  color: #4D173A;
+  border-radius: 10px;
+  border: solid #84D9AD 1px;
+  padding: 20px 20px;
 }
 
 #contact{
@@ -285,4 +263,20 @@ h6 {
 
 .fa-facebook-official {
   padding-right: 20px;
+  color: #F7FAE6;
+}
+
+.fa-linkedin-square {
+  color: #F7FAE6;
+}
+
+#email {
+  color: #F7FAE6;
+}
+#email:visited {
+  color: #F7FAE6;
+}
+#email:hover {
+  text-decoration: none;
+  color: #F7FAE6;
 }

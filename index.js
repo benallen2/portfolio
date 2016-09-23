@@ -37,10 +37,8 @@ function projectPop (){
   $(".worklist").click(function() {
     $("#workInfo").empty();
     $("#workImg").empty();
-    $("#workTitle").empty();
     workId = Number($(this).attr("id"));
-    $("#workTitle").append("<h3>" + projects[workId - 1].name + "</h3>");
-    $("#workImg").append("<a target='_blank' href=" + projects[workId - 1].href + "><img src=" + projects[workId - 1].img + "></a><p>Click image to see full project</p>");
+    $("#workImg").append("<a target='_blank' href=" + projects[workId - 1].href + "><img src=" + projects[workId - 1].img + "></a>");
     $("#workInfo").append("<h5>" + projects[workId - 1].info + "</h5>");
   });
 }
@@ -77,6 +75,7 @@ function sectionActive(){
     $(".brand").addClass("active");
   });
 }
+
 function downArrowClick (){
   $(".downArrow").click(function() {
     $("html, body").animate({
@@ -117,8 +116,8 @@ function downArrowClick (){
 
 function workActive () {
   $(".worklist").click(function(){
-    $(".worklist").removeClass("active");
-    $(this).addClass("active");
+    $(".worklist").removeClass("workActive");
+    $(this).addClass("workActive");
   });
 }
 

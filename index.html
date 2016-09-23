@@ -41,8 +41,9 @@
         <h1 class="aboutTitle">About Me</h1>
       </div>
       <div class="row">
-        <h4 class="aboutText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4><br/>
-        <h4 class="aboutText lastAbout">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+        <h4 class="aboutText">I'm Ben Allen, a self-taught web developer living in the Washington, D.C. area. I have been learning web development since June 2016 and have learned HTML, CSS, Javascript, jQuery, and Bootstrap so far.  I am currently working on React.js and Node.js. </h4><br/>
+        <h4 class="aboutText">Before web development consumed my life in the best of ways, I worked on Capitol Hill where I thoroughly destroyed all of my desire to work on policy or politics ever again.  Prior to that I was an English teacher in South Korea where I discovered my love for learning new things outweighs my interest in teaching, though I loved living abroad and the travel it allowed me to do.</h4><br/>
+				<h4 class="aboutText lastAbout">So far, teaching myself web development has been an amazing journey where the triumphs dwarf the frustrations and I feel empowered to influence the world around me for the better.  I am excited every day to move forward and expand my skills.</h4>
       </div>
     </div>
 		<div class="row">
@@ -51,46 +52,56 @@
 			</div>
 		</div>
   </div><!--End About Container -->
-  <div class="container-fluid workContainer" id="work"><!--Work Container -->
-    <div class="row workNav">
-      <div class="col-xs-1 workMenuDock"></div>
-      <div class="col-xs-2 worklist active" id="1"><h6>Metro Better</h6></div>
-      <div class="col-xs-2 worklist" id="2"><h6>Twitch Viewer</h6></div>
-      <div class="col-xs-2 worklist" id="3"><h6>Laath Photography</h6></div>
-      <div class="col-xs-2 worklist" id="4"><h6>Pomodoro Timer</h6></div>
-      <div class="col-xs-2 worklist" id="5"><h6>Javascript Calculator</h6></div>
-      <div class="col-xs-1 worklist" id="6"><h6>Simon</h6></div>
-    </div>
-
-		<div class="row"><!--Content for work box-->
-			<div class="col-xs-8 col-xs-offset-2 workContent">
-				<div class="row">
-					<div class="col-xs-6 col-offset-1" id="workTitle">
-						<h3>Metro Better</h3>
-					</div>
-						<div class="col-xs-6 col-offset-1" id="workImg"><a target="_blank"  href="../Metro/Metro.html"><img src="./metross.png"></a><p>Click image to see full project</p>
-						</div>
-				</div>
-
-				<div class="row">
-					<div class="col-xs-11 col-xs-offset-1" id="workInfo"><h5>A project that displays information the next incoming train to any Metro station in the Washington D.C. Metro Area. I made this project for myself to practice pulling information in real-time from a large scale API. The project uses HTML, CSS, Javascript, jQuery and Bootstrap.</h5>
-					</div>
-				</div>
-			</div>
+	<div class="container menuDock col-xs-1">
+	</div>
+<div class="container col-xs-2 workNav" id="work">
+	<div class="row workActive worklist" id="1">
+			<h5>Metro Better</h5>
+	</div>
+	<div class="row worklist" id="2">
+			<h5>Twitch Viewer</h5>
+	</div>
+	<div class="row worklist" id="3">
+			<h5>Laath Martin Photography</h5>
+	</div>
+	<div class="row worklist" id="4">
+			<h5 >Pomodoro Timer</h5>
+	</div>
+	<div class="row worklist" id="5">
+			<h5>Javascript Calculator</h5>
+	</div>
+	<div class="row worklist" id="6">
+			<h5>Simon</h5>
+	</div>
+</div>
+<div class="container col-xs-9 content">
+	<div class="row">
+		<div class="title">
+			<h1> My Work </h1>
 		</div>
+	</div>
+	<div class="row" id="workImg">
+			<a href="./Metro/Metro.html" target="_blank"><img src="./metross.png"></a>
+	</div>
+	<div id="clickIt">
+		<p>Click image to view full project</p>
+	</div>
+	<div class="row col-xs-6 col-xs-offset-3" id="workInfo">
+		<h5>A project that displays information the next incoming train to any Metro station in the Washington D.C. Metro Area. I made this project for myself to practice pulling information in real-time from a large scale API. The project uses HTML, CSS, Javascript, jQuery, and Bootstrap.</h5>
+	</div>
 		<div class="row">
 			<div class="col-xs-2 col-xs-offset-5 downArrowWork">
 				<img id="downarrowWork" src="./whitedown.svg">
 			</div>
 		</div>
+	</div>
+<!--End Work Container -->
 
-  </div><!--End Work Container -->
-<footer>
-	<div class="row"  id="contact">
+	<div class="container-fluid" id="contact">
 		<div class="col-xs-6">
 			<h2>Contact Me:</h2>
 			<h5>Phone: 240-383-0710</h5>
-			<a href="mailto:ben.allen2@gmail.com">Email Me!</a>
+			<a href="mailto:ben.allen2@gmail.com"  id="email">Email Me!</a>
 		</div>
 		<div class="col-xs-6">
 			<h2>Social Media</h2>
@@ -98,7 +109,7 @@
 			<a href="https://www.linkedin.com/in/benjamin-allen-99099312" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
 		</div>
 	</div>
-</footer>
+
 
 </div><!--Page Wrap -->
 
