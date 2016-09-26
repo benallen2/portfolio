@@ -16,29 +16,31 @@ html, body {
 }
 
 #introText{
-  margin-top: 20%;
+  margin-top: 60%;
   font-family: 'Oleo Script', cursive;
   font-size: 72px;
   color: #4D173A;
   text-align: center;
 }
 
-.introstuff{
-  margin-top: 250px;
-}
-.downArrow > img{
+.downArrow {
   text-align: center;
-  margin-top: 30%;
-  max-height: 100px;
+  max-height: 70px;
+  min-height: 60px;
 }
+
 #downarrow, #downarrowAbout, #downarrowWork  {
   cursor: pointer;
   max-height: 70px;
+  min-height: 60px;
+  min-width: 50px;
 }
-.downArrowAbout > img{
+
+.downArrowAbout > img {
   text-align: center;
   margin-top: 10px;
   max-height: 100px;
+  min-height: 60px;
 }
 
 #name {
@@ -61,18 +63,19 @@ a:hover {
   transition: margin-left 0.3s ease;
   width: 100%;
   left: 0;
-  float: left;
   overflow-x: hidden;
 }
 
 .mainContainer {
-  background: url("./gulls.jpg") no-repeat center center fixed;
+  background: url("./gulls.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
   border-bottom: 1px solid black;
+  position: static;
+  overflow-x: hidden;
 }
 
 
@@ -147,6 +150,7 @@ a:hover {
   background-size: cover;
   padding-left: 70px;
 }
+
 .aboutContent {
   background-color: #F7FAE6;
   padding: 10px 40px 10px 40px;
@@ -229,6 +233,7 @@ a:hover {
   padding-bottom: 10px;
   margin-top: 5%;
 }
+
 .worklist > h5 {
   font-size: 20px;
   cursor: pointer;
@@ -252,12 +257,13 @@ a:hover {
   border-bottom-left-radius: 10px;
 }
 
-.content {
+.Workcontent {
   background-color: #15486A;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   height: 100vh;
   text-align: center;
+  overflow-x: auto;
 }
 
 #workInfo {
