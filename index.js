@@ -9,7 +9,7 @@ var projects = [{
   name: "Twitch Viewer",
   info: "This project came as a challenge from Free Code Camp to use the Twitch.tv API to create a page on which users could see if certain featured streamers were currently online.  I decided to expand on it by embedding a video player directly into the site and including the top 10 currently online streamers for Starcraft II.",
   img: "./twitchss.png",
-  href: "./TwitchViewer/twitch.html"
+  href: "./TwitchViewer/index.html"
 }, {
   name: "Laath Martin Photography",
   info: "My first site that I created for a friend who happens to be a skilled photographer.  He has a functioning website but I felt I could make it look a bit cleaner and it gave me a chance to apply the skills I had been learning to the real world.",
@@ -22,7 +22,7 @@ var projects = [{
   href: "./Pomodoro/Pomodoro.html"
 }, {
   name: "Javascript Calculator",
-  info: "This is a fully functional calculator made with Javascript.  The calculator is designed to look like a Texas Instruments TI-108 calculator which were what I used in grade school.",
+  info: "This is a fully functional calculator made with Javascript.  The calculator is designed to look like a Texas Instruments TI-108 calculator I used in grade school.",
   img: "./calculatorss.png",
   href: "./Calculator/Calculator.html"
 }, {
